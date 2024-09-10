@@ -5,9 +5,11 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+    <main><h1>FPL Stats</h1></main>
+    <router-outlet />
+  `,
 })
 export class AppComponent {
-  title = 'fpl-stats';
+  title = 'FPL Stats';
 }

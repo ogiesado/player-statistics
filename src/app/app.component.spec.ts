@@ -8,22 +8,22 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('creates the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'fpl-stats' title`, () => {
+  it(`displays document title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fpl-stats');
+    expect(app.title).toEqual('FPL Stats');
   });
 
-  it('should render title', () => {
+  it('displays heading', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, fpl-stats');
+    expect(compiled.querySelector('h1')?.textContent).toContain('FPL Stats');
   });
 });
